@@ -1,0 +1,21 @@
+in react, the webpage can also be created by using the command - 
+1. npx create-react-app app_name
+It will create the basic react todo App where the following changes we ve made
+- first in index.js - removing the strict mode from the render function
+- App is imorting in index.js so we go for app.js
+
+2. In App.js
+- remove the logo script and start ur work by first writing hello obviouusly under the return statement
+- the added new components or for the new components we can write css in App.css
+
+3. then created folder in src - Components - todo.js file
+
+4. commands - *very imortant* - rcc - returns the class component
+ - rfce - returns the functional component
+
+ - the ID is must for every task u create in react if not created it ll give the warning and not error but it's sufficient to give it before..
+
+ - while calling the delete function from the button, the value of onclick shouldn't be the direct function like
+ <button onClick= this.handleDelete(taskObj.id)>Delete</button> but the definition of the function should ve written here by using arrow or the bind method like
+ <button onClick={() => this.handleDelete(taskObj.id)}>Delete</button>
+ 
